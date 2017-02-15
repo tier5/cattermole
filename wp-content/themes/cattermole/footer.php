@@ -18,24 +18,11 @@
                 <div class="col-md-6">
                     <h5>Law Office of Gregory C. Cattermole</h5>
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 address-panel">
-                            <p>1300 South El Camino Real</p>
-                            <p>Suite 300</p>
-                            <p>San Mateo, CA</p>
-                            <p>94402-2971</p>
-                        </div>
-                        <div class="col-md-6 col-sm-6 phoneno-panel">
-                            <p>Phone: (650) 345-6812</p>
-                            <p>Fax: (650) 345-6812</p>
-                        </div> 
+                       <?php dynamic_sidebar('sidebar-4');?>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <ul>
-                        <li><a href="contact-us.html">Contact Us</a></li>
-                        <li><a href="firm-overview.html">Our Firm</a></li>
-                        <li><a href="practice-areas.html">Practice Area</a></li>
-                    </ul>  
+                   <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?> 
                 </div>
             </div>
             <div class="row copyrights">

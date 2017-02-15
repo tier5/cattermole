@@ -42,27 +42,21 @@
                 <div class="row">
                     <div class="col-md-9 col-sm-9">
                         <div class="logo">
-                        <a href="index.html">
+                        <a href="<?php echo site_url();?>">
                         <img src="<?php echo get_template_directory_uri();?>/images/law-office-of-gregory-c-cattermole.jpg" alt="law-office-of-gregory-c-cattermole" title="law-office-of-gregory-c-cattermole">
                         </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3">
                         <div class="phone-no">
-                          (310)277-9945
+                          <?php dynamic_sidebar('sidebar-5');?>
                         </div>
                     </div>
                 </div>
             </div>  
         </div>
         <div class="header-bottom">
-            <ul>
-                <li><a class="menu-select" href="index.html">Home</a></li>
-                <li><a href="firm-overview.html">Firm Overview</a></li>
-                <li><a href="practice-areas.html">Practice Areas</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>  
+            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
         </div>
         <div class="mobile-menu">
           <div class="container">
@@ -107,13 +101,7 @@
             <div class="col-md-12">
                 <div id="foo">
                     <div class="mobile-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="firm-overview.html">Firm Overview</a></li>
-                            <li><a href="practice-areas.html">Practice Areas</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact-us.html">Contact Us</a></li>
-                        </ul>  
+                       <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
                     </div>  
                 </div>
             

@@ -84,7 +84,9 @@ function twentyfifteen_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu',      'twentyfifteen' ),
 		'social'  => __( 'Social Links Menu', 'twentyfifteen' ),
+		'footer'  => __( 'Footer Menu', 'twentyfifteen' ),
 	) );
+
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -159,6 +161,47 @@ function twentyfifteen_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Widget Area', 'twentyfifteen' ),
 		'id'            => 'sidebar-1',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+
+	register_sidebar( array(
+		'name'          => __( 'Reach US Widget Area', 'twentyfifteen' ),
+		'id'            => 'sidebar-2',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Call US Today Widget Area', 'twentyfifteen' ),
+		'id'            => 'sidebar-3',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Footer Widget Area', 'twentyfifteen' ),
+		'id'            => 'sidebar-4',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Header Widget Area', 'twentyfifteen' ),
+		'id'            => 'sidebar-5',
 		'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -405,3 +448,4 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since Twenty Fifteen 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
+require_once 'sub-functions.php';
