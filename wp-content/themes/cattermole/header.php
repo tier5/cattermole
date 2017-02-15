@@ -64,7 +64,7 @@
               <div class="col-xs-3 border-right">
                   <div class="menu-button">
                     <a href="#"  onclick="toggle_visibility('foo');">  
-                    <img src="<?php echo get_template_directory_uri();?>images/menu-icon.jpg" alt="img">
+                    <img src="<?php echo get_template_directory_uri();?>/images/menu-icon.jpg" alt="img">
                      Menu
                     </a> 
                   </div>
@@ -72,7 +72,7 @@
               <div class="col-xs-3 border-right">
                   <div class="menu-button">
                     <a href="310-277-9945">  
-                    <img src="<?php echo get_template_directory_uri();?>images/call-icon.jpg" alt="img">
+                    <img src="<?php echo get_template_directory_uri();?>/images/call-icon.jpg" alt="img">
                      Phone
                     </a> 
                   </div>
@@ -81,7 +81,7 @@
               <div class="col-xs-3 border-right">
                   <div class="menu-button">
                     <a href="direction.html">  
-                    <img src="<?php echo get_template_directory_uri();?>images/location-icon.jpg" alt="img">
+                    <img src="<?php echo get_template_directory_uri();?>/images/location-icon.jpg" alt="img">
                      Location
                     </a> 
                   </div>
@@ -90,7 +90,7 @@
               <div class="col-xs-3">
                   <div class="menu-button">
                     <a href="contact-us.html">  
-                    <img src="<?php echo get_template_directory_uri();?>images/contact-icon.jpg" alt="img">
+                    <img src="<?php echo get_template_directory_uri();?>/images/contact-icon.jpg" alt="img">
                      Contact
                     </a> 
                   </div>
