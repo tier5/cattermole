@@ -17,8 +17,19 @@
 get_header();
 
 ?>
+<div class="contact-bg">
+        <div class="contact-overlay"></div>
+        <div class="contact-main">
+        <h1>Contact Us</h1>
+
+        <div class="col-md-6 col-sm-6 col-sm-offset-3">
+<div class="contact-form">
 
 <?php echo do_shortcode('[contact-form-7 id="47" title="Cattermole Contact"]');?>
 
 
+</div>
+ </div>
+</div>
+</div>
 <?php get_footer(); ?>
