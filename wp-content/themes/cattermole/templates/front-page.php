@@ -108,9 +108,9 @@ $about_image = wp_get_attachment_image_src( get_post_thumbnail_id($about_id), 'f
     <div class="map">  
                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.013663082178!2d-122.31947194942553!3d37.55474187970097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9e5df059b1cf%3A0x6f9ca493afe07bbb!2s1300+S+El+Camino+Real+%23300%2C+San+Mateo%2C+CA+94402%2C+USA!5e0!3m2!1sen!2suk!4v1487148510654" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div> 
-    <div class="call-no">
-        <?php dynamic_sidebar('sidebar-3');?>
-    </div> 
+   <!--  <div class="call-no">
+        <?php //dynamic_sidebar('sidebar-3');?>
+    </div>  -->
 
 
 <?php get_footer(); ?>
