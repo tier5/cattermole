@@ -113,3 +113,12 @@ function cattermole_init() {
 }
 
 
+
+function my_wpcf7_dropdown_form($html) {
+	$text = 'Select State';
+	$html = str_replace('---', '' . $text . '', $html);
+	return $html;
+}
+add_filter('wpcf7_form_elements', 'my_wpcf7_dropdown_form');
+
+

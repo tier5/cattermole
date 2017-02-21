@@ -21,7 +21,7 @@ get_header();
         <div class="contact-overlay"></div>
         <div class="contact-main">
         <h1>Contact Us</h1>
-
+         <p class="align-center">About the firm text goes here</p>
         <div class="col-md-6 col-sm-6 col-sm-offset-3">
 <div class="contact-form">
 

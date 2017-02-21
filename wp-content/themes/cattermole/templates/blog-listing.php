@@ -77,48 +77,11 @@ $blog_query = new WP_Query($blog_args);
                 </div>  
               </div>
               <?php }?>
-             <!--  <div class="col-md-4">
-                  <div class="contact-box">
-                      <h3 class="align-center">Contact Us</h3>
-                      <p class="align-center">About the firm text goes here</p>
-                      <form>
-                          <div class="form-group">
-                            <label>First Name</label>
-                            <input class="form-control" type="text" name="" placeholder="Your First Name">
-                          </div>
-                          <div class="form-group">
-                            <label>Last Name</label>
-                            <input class="form-control" type="text" name="" placeholder="Your Last Name">
-                          </div>
-                          <div class="form-group">
-                            <label>Email Address</label>
-                            <input class="form-control" type="text" name="" placeholder="Your Email Addres">
-                          </div>
-                          <div class="form-group">
-                            <label>Phone Number</label>
-                            <input class="form-control" type="text" name="" placeholder="Your Phone number">
-                          </div>
-                          <div class="form-group">
-                            <label>State</label>
-                            <select class="form-control">
-                              <option>State goes here</option>
-                              <option>State goes here</option>
-                              <option>State goes here</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label>Message</label>
-                            <textarea placeholder="Your Message"></textarea>
-                          </div>
-                          <div class="form-group">
-                             <input type="submit" value="Send Message"> 
-                          </div>  
-                      </form>  
-                  </div>
-              </div> -->
+             
               <div class="col-md-4 col-sm-4">
                   <div class="contact-box">
                       <h3 class="align-center">Contact Us</h3>
+                       <p class="align-center">About the firm text goes here</p>
               <?php echo do_shortcode('[contact-form-7 id="56" title="Sidebar Contact"]');?>
               </div>
               </div>

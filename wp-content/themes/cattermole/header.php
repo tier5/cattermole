@@ -89,7 +89,7 @@
               </div>
               <div class="col-xs-3">
                   <div class="menu-button">
-                    <a href="contact-us.html">  
+                    <a href="<?php echo site_url().'/contact-us';?>">  
                     <img src="<?php echo get_template_directory_uri();?>/images/contact-icon.jpg" alt="img">
                      Contact
                     </a> 
