@@ -71,7 +71,7 @@
               </div>
               <div class="col-xs-3 border-right">
                   <div class="menu-button">
-                    <a href="310-277-9945">  
+                    <a href="tel:310-277-9945">  
                     <img src="<?php echo get_template_directory_uri();?>/images/call-icon.jpg" alt="img">
                      Phone
                     </a> 
