@@ -80,7 +80,7 @@
               </div>
               <div class="col-xs-3 border-right">
                   <div class="menu-button">
-                    <a href="direction.html">  
+                    <a href="<?php echo site_url().'/direction';?>">  
                     <img src="<?php echo get_template_directory_uri();?>/images/location-icon.jpg" alt="img">
                      Location
                     </a> 
