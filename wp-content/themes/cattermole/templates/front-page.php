@@ -68,9 +68,9 @@ $about_image = wp_get_attachment_image_src( get_post_thumbnail_id($about_id), 'f
                 <?php while($practice_query->have_posts()):$practice_query->the_post();?>
                   <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'full');?>
                 <div class="col-md-2 col-sm-4 col-xs-6">
-                  <img src="<?php echo ($image[0]!="")?$image[0]:'';?>" alt="img">
+                  <a href="<?php echo get_permalink();?>"><img src="<?php echo ($image[0]!="")?$image[0]:'';?>" alt="img"></a>
                   <div class="practice-txt">
-                    <?php echo get_the_title();?>
+                    <a href="<?php echo get_permalink();?>"><?php echo get_the_title();?></a>
                   </div>
                 </div>
               <?php endwhile;?>

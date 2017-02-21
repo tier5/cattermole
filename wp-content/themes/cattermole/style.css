@@ -59,7 +59,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
  */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 @font-face {
   font-family: 'Georgia';
   src: url('fonts/Georgia.eot');
@@ -71,6 +70,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   font-weight: normal;
   font-style: normal;
 }
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300i,400,700');
 
@@ -90,7 +94,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 
-body{font-family: 'Georgia';}
+body{font-family: 'Georgia'; letter-spacing: all;}
 img{max-width: 100%;}
 .align-center{text-align: center;}
 h2{font-size: 30px; margin: 0; padding: 0; color: #081F32;}
@@ -113,9 +117,8 @@ header .header-bottom ul li a{margin: 0; padding: 0 10px; text-decoration: none;
 .banner .caption{width: 572px; margin: 15% auto; position: absolute; top: 0; left: 0; right: 0;
  }
 .banner .caption .caption-top{background: rgba(255, 255, 255, 0.7); color: #092232;
-font-size: 40px; padding: 5px 0;
-}
-
+font-size: 40px; padding: 5px 0;}
+header .header-bottom ul li.current-menu-item a{color: #092232 !important}
 
 .banner .caption .caption-bottom{background: rgba(8, 31, 50, 0.7); color: #fff;
 font-size: 40px; padding: 5px 0;}
@@ -190,12 +193,14 @@ font-size: 13px;}
 .inner-practice{margin-top: 25px; padding:20px 0 5px;}
 h2.blog-heading{background:#081F32; color: #fff; padding: 4px; font-size: 21px;
 margin-bottom: 8px;}
+h2.blog-heading a{color: #fff;}
+
 .blog-pic{float: left; margin: 0 15px 15px 0; width: 298px;}
 .share-blog{margin: 0; padding:0 0 10px;}
 .share-blog ul{margin: 0; padding:0;}
 .share-blog ul li{margin: 0 1px 0 0; padding:0; display: inline-block; border:1px solid #E5E5E4;}
 .share-blog ul li a{text-decoration: none; color: #323B41;}
-.share-blog ul li:first-child{border:none;}
+.share-blog ul li:first-child{border:none; vertical-align: top; padding-top: 8px;}
 .single-blog{margin-bottom: 15px;}
 .nxt-prev{margin: 0; padding: 15px 0;}
 .nxt-prev ul{margin: 0; padding: 0; text-align: center;}
@@ -212,6 +217,7 @@ min-height: 747px; padding-top: 53px; position: relative; overflow: hidden; colo
 .contact-main{z-index: 9999; position: absolute; width: 100%;}
 
 
+
 .contact-bg h1 {
   color: #fff;
   font-family: "Lato",sans-serif;
@@ -224,13 +230,13 @@ min-height: 747px; padding-top: 53px; position: relative; overflow: hidden; colo
 .contact-bg p{text-align: center; color: #fff; font-family: 'Lato', sans-serif;}
 .contact-form{padding-top: 25px;}
 .contact-form label{display: block; font-family: 'Lato', sans-serif; font-weight: 400;}
-.contact-form textarea{width: 100%; height: 95px; border-radius: 0px; resize: none; color: #000;
+.contact-form textarea{width: 100%; height: 113px !important; border-radius: 0px; resize: none; color: #000;
 padding: 5px 12px; font-size: 13px;
 }
 .contact-form input[type="submit"]{display: block; width: 100%; background:#0C5689; color: #fff; cursor: pointer;
 border:none; padding: 13px; font-family: 'Lato', sans-serif; font-size: 15px;
 }
-.contact-form .form-control{border-radius: 0; height: auto; padding:5px 12px; font-size: 13px; color: #000;}
+.contact-form .form-control{border-radius: 0; height: auto; padding:7px 12px; font-size: 13px; color: #000;}
 .profile-image{margin-bottom: 40px; width: 345px; }
 .location-info p{color: #15212B; font-size: 15px; color: #15212B; margin: 0;}
 .location-map{margin: 35px 0;}

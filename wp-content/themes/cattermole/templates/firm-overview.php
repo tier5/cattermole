@@ -16,7 +16,7 @@
 
 get_header();
 
-$firm_id = 7;
+$firm_id = 56;
 $post = get_post($firm_id); 
 $title =  $post->post_title;
 $content =  $post->post_content;
@@ -50,9 +50,9 @@ $ourpeople_query = new WP_Query($ourpeople_args);
                                   <?php $people_image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full');?>
 
                             <div class="col-md-4 col-sm-4 single-pic">
-                                <figure><img src="<?php echo $people_image[0]!=''?$people_image[0]:get_template_directory_uri().'/images/our-people.jpg';?>" alt="img"></figure>
+                                <figure><a href="<?php echo get_permalink();?>"><img src="<?php echo $people_image[0]!=''?$people_image[0]:get_template_directory_uri().'/images/our-people.jpg';?>" alt="img"></a></figure>
                                 <figurecaption>
-                                  <?php echo get_the_title();?><br>(<?php echo get_field( "designation", get_the_ID());?>)
+                                  <a href="<?php echo get_permalink();?>"><?php echo get_the_title();?><br>(<?php echo get_field( "designation", get_the_ID());?>)</a>
                                 </figurecaption>
                             </div>
                           <?php endwhile;?>
