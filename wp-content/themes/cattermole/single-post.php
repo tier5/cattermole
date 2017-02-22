@@ -34,7 +34,7 @@ $image = wp_get_attachment_image_src( get_post_thumbnail_id($blog_id), 'full');
 
                     <ul>
                         <li>SHARE:</li>
-                        <?php echo do_shortcode('[simple-social-share]');?>
+                        <?php echo do_shortcode('[ssba]'); ?>
                     </ul>
                   </div>
                   <p>

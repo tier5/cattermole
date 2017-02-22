@@ -114,8 +114,14 @@ header .header-bottom ul{text-align:  center; margin: 0; padding: 0}
 header .header-bottom ul li{margin: 0; padding: 0; display: inline-block; font-family: 'Georgia'; font-size: 17px;}
 header .header-bottom ul li a{margin: 0; padding: 0 10px; text-decoration: none; color: #4D4C4C;}
 .banner{text-align: center; position: relative; max-height: 595px; overflow: hidden;}
-.banner .caption{width: 572px; margin: 15% auto; position: absolute; top: 0; left: 0; right: 0;
+/*.banner .caption{width: 572px; margin: 15% auto; position: absolute; top: 0; left: 0; right: 0;
+ }*/
+
+.banner .caption{width: 572px; position: absolute; 
+  top: 50%; left: 50%; right: 0; margin-left: -286px; margin-top: -113px;
  }
+
+
 .banner .caption .caption-top{background: rgba(255, 255, 255, 0.7); color: #092232;
 font-size: 40px; padding: 5px 0;}
 header .header-bottom ul li.current-menu-item a{color: #092232 !important}
@@ -165,7 +171,10 @@ width: 49px; margin: 0 auto;
   margin-top: 51px;
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
+.small-banner img{width: 100%;} 
+
 .small-banner h1{margin: 0; padding: 0; font-family: 'Lato', sans-serif; font-size: 35px;
 color: #fff; position: absolute; top: 36px; left: 0; right: 0; bottom: 0; 
 z-index: 9999;}
@@ -286,7 +295,11 @@ div.wpcf7-response-output{margin: 0 !important;}
 
 @media screen and (max-width: 790px) {
 
-  .banner .caption{margin:20% auto;}
+  /*.banner .caption{margin:20% auto;}*/
+
+  .banner .caption{margin:20% auto; left: 0; right: 0; bottom: 0; top: 0;}
+
+
 	.banner .caption .caption-top{font-size: 27px; }
 	.banner .caption .caption-bottom{font-size: 27px;}
 	.banner .caption{width: 419px;}
@@ -300,7 +313,9 @@ div.wpcf7-response-output{margin: 0 !important;}
 
 .phone-no{display: none;}
 .header-bottom{display: none;}
-.banner .caption{margin: 11% auto;}
+/*.banner .caption{margin: 11% auto;}*/
+
+.banner .caption{margin: 5% auto; top: 0; left: 0; bottom: 0; right: 0;}
 
 .our-contact{text-align: center;}
 footer{text-align: center;}
@@ -327,6 +342,8 @@ footer{text-align: center;}
 
 @media screen and (max-width: 480px) {
 
+  .banner .caption{margin: 11% auto; top: 0; left: 0; bottom: 0; right: 0;}
+
 	.banner .caption .caption-top {font-size: 20px;}
 	.banner .caption .caption-bottom {font-size: 20px;}
 	.banner .caption {width: 339px;}
@@ -348,4 +365,7 @@ footer{text-align: center;}
 
   .profile-image{width: 300px;}
 
+}
+.ssba, .ssba a{
+  display: inline-block;
 }
