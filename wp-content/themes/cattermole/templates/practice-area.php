@@ -37,10 +37,11 @@ $practice_query = new WP_Query($practice_args);
       <img src="<?php echo($image[0]!="")?$image[0]: get_template_directory_uri().'/images/home-banner.jpg';?>" alt="img">
       <h1><?php echo $title;?></h1>
     </div>
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row">
             <div class="col-md-12 col-sm-12">
+            <div class="row">
               <div class="practice-area inner-practice">
                    <?php if($practice_query->have_posts()):?>
             <div class="row">
@@ -57,7 +58,8 @@ $practice_query = new WP_Query($practice_args);
               <?php endwhile;?>
             </div>
             <?php endif;?>  
-              </div>  
+              </div> 
+              </div> 
             </div>
         </div>
     </div>

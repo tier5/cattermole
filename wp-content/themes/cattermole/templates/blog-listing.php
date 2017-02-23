@@ -66,9 +66,9 @@ $blog_query = new WP_Query($blog_args);
                     <div class="col-md-12">
                         <div class="nxt-prev">
                             <ul>
-
+                               <li><?php previous_posts_link( 'Previous' );?></li>
                                 <li><?php next_posts_link( 'Next', $blog_query->max_num_pages );?></li>
-                                <li><?php previous_posts_link( 'Previous' );?></li>
+                                
                                 
                             </ul>  
                         </div>

@@ -49,7 +49,7 @@
                     </div>
                     <div class="col-md-3 col-sm-3">
                         <div class="phone-no">
-                          <?php dynamic_sidebar('sidebar-5');?>
+                          <a href="tel:3102779945"><?php dynamic_sidebar('sidebar-5');?></a>
                         </div>
                     </div>
                 </div>

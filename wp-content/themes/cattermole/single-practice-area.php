@@ -20,8 +20,8 @@ $practice_query = new WP_Query($practice_args);
  ?>
 
 <?php while(have_posts()):the_post();?>
-	<?php $area_image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full');?>
-	<div class="small-banner">
+  <?php $area_image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full');?>
+  <div class="small-banner">
       <img src="<?php echo get_template_directory_uri();?>/images/firm-overview-banner.jpg" alt="img">
       <h1><span><img src="<?php echo $area_image[0]!='' ? $area_image[0] : '' ;?>" alt="img"></span><?php echo get_the_title();?></h1>
     </div>
@@ -45,9 +45,10 @@ $practice_query = new WP_Query($practice_args);
         </div>  
     </div>
 <?php endwhile;?>
-     <div class="container">
+     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 col-sm-12">
+            <div class="row">
               <div class="practice-area inner-practice">
                   <div class="row">
 
@@ -65,7 +66,8 @@ $practice_query = new WP_Query($practice_args);
             
               <?php endif;?> 
             </div>  
-              </div>  
+              </div> 
+              </div> 
             </div>
         </div>
     </div>

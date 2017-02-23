@@ -104,6 +104,7 @@ a{outline: none;}
 
 header .header-top{background:#262626; padding: 15px 0;  color: #fff;}
 header .header-top .phone-no{font-size: 27px; text-align: right; font-family: 'Lato', sans-serif;}
+header .header-top .phone-no a{color: #fff;}
 
 header .header-bottom{background:#fff; padding: 14px 0;
 -webkit-box-shadow: 0 8px 6px -6px black;
