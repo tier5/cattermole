@@ -16,7 +16,7 @@
 
 get_header();
 
-$testi_id = 74;
+$testi_id = 71;
 $post = get_post($testi_id); 
 $title =  $post->post_title;
 $image = wp_get_attachment_image_src( get_post_thumbnail_id($testi_id), 'full');
