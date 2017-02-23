@@ -22,7 +22,7 @@ get_header();
         <div class="contact-main">
         <h1>Contact Us</h1>
          <p class="align-center">About the firm text goes here</p>
-        <div class="col-md-6 col-sm-6 col-sm-offset-3">
+        <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-3">
 <div class="contact-form">
 
 <?php echo do_shortcode('[contact-form-7 id="47" title="Cattermole Contact"]');?>
