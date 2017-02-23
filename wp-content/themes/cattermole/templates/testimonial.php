@@ -93,9 +93,10 @@ $practice_query = new WP_Query($practice_args);
         </div>  
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 col-sm-12">
+            <div class="row">
               <div class="practice-area inner-practice">
                   <div class="row">
 
@@ -113,7 +114,8 @@ $practice_query = new WP_Query($practice_args);
             
               <?php endif;?> 
             </div>  
-              </div>  
+              </div> 
+              </div> 
             </div>
         </div>
     </div>
