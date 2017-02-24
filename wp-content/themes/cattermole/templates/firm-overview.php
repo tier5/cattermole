@@ -16,7 +16,7 @@
 
 get_header();
 
-$firm_id = 56;
+$firm_id = 7;
 $post = get_post($firm_id); 
 $title =  $post->post_title;
 $content =  $post->post_content;
