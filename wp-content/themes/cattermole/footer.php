@@ -17,20 +17,21 @@
 	 <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h5>Law Office of Gregory C. Cattermole</h5>
+                <div class="col-md-5">
+                    <div class="row">
+                      <h5>Law Office of Gregory C. Cattermole</h5>
+                    </div>
                     <div class="row">
                        <?php dynamic_sidebar('sidebar-4');?>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
                    <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?> 
                 </div>
             </div>
             <div class="row copyrights">
                 <div class="col-md-12 col-sm-12">
-                  © 2017 Law Office of Gregory C. Cattermole
-All Rights Reserved.
+                  © <?php echo date("Y");?> Law Office of Gregory C. Cattermole All Rights Reserved.
 Developed by: <img src="<?php echo get_template_directory_uri();?>/images/media-smack.jpg" alt="img">
                 
                 </div>  

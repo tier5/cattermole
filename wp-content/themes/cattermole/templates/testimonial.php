@@ -16,7 +16,7 @@
 
 get_header();
 
-$testi_id = 74;
+$testi_id = 71;
 $post = get_post($testi_id); 
 $title =  $post->post_title;
 $image = wp_get_attachment_image_src( get_post_thumbnail_id($testi_id), 'full');
@@ -93,9 +93,10 @@ $practice_query = new WP_Query($practice_args);
         </div>  
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 col-sm-12">
+            <div class="row">
               <div class="practice-area inner-practice">
                   <div class="row">
 
@@ -113,7 +114,8 @@ $practice_query = new WP_Query($practice_args);
             
               <?php endif;?> 
             </div>  
-              </div>  
+              </div> 
+              </div> 
             </div>
         </div>
     </div>
