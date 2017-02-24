@@ -67,7 +67,7 @@ $image = wp_get_attachment_image_src( get_post_thumbnail_id($blog_id), 'full');
                 
                 </div> 
               </div>
-              <div class="col-md-4 col-sm-4">
+              <div class="col-md-4">
                   <div class="contact-box">
                       <h3 class="align-center">Contact Us</h3>
                        <p class="align-center">About the firm text goes here</p>

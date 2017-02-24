@@ -50,7 +50,6 @@ $practice_query = new WP_Query($practice_args);
             <div class="col-md-12 col-sm-12">
             <div class="row">
               <div class="practice-area inner-practice">
-                  <div class="row">
 
                    <?php if($practice_query->have_posts()):?>
            
@@ -65,7 +64,6 @@ $practice_query = new WP_Query($practice_args);
               <?php endwhile;?>
             
               <?php endif;?> 
-            </div>  
               </div> 
               </div> 
             </div>
