@@ -198,7 +198,7 @@ padding-bottom: 5px;
 .contact-box label{color: #fff; font-size: 12px; display: block; font-weight: 400}
 .contact-box .form-control{border-radius: 0; height: auto; padding: 4px 10px; font-size: 13px}
 .contact-box .form-group {margin-bottom: 8px;}
-.contact-box textarea {border-radius: 0; height: 91px; padding: 5px; width: 100%;}
+.contact-box textarea {border-radius: 0; height: 91px; padding: 5px; width: 100%; color:#666;}
 .contact-box input[type="submit"]{display: block; border-radius: 0px; background:#0C5689;
 color: #fff; cursor: pointer; width: 100%; border:none; padding: 8px 0; font-weight: 400;
 font-size: 13px;}
