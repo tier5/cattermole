@@ -31,7 +31,8 @@
             </div>
             <div class="row copyrights">
                 <div class="col-md-12 col-sm-12">
-                  © 2017 Law Office of Gregory C. Cattermole All Rights Reserved.
+ © <?php echo date("Y");?> Law Office of Gregory C. Cattermole All Rights Reserved.
+
 Developed by: <img src="<?php echo get_template_directory_uri();?>/images/media-smack.jpg" alt="img">
                 
                 </div>  

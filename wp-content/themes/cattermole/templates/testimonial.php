@@ -93,7 +93,7 @@ $practice_query = new WP_Query($practice_args);
         </div>  
     </div>
 
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 col-sm-12">
             <div class="row">
@@ -118,7 +118,7 @@ $practice_query = new WP_Query($practice_args);
               </div> 
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 <?php get_footer(); ?>
