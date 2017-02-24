@@ -314,7 +314,7 @@ div.wpcf7-response-output{margin: 0 !important;}
 .bodypart .container{width: auto;}
 .banner{max-height:485px;}
 .small-banner h1{top: 25px;}
-.profile-image{margin: 0 auto 25px auto;}
+
 .location-info{text-align: center;}
 .small-banner h1{top: 17px;}
 
@@ -442,6 +442,11 @@ footer{text-align: center;}
   }
 
   header .header-top .phone-no{font-size: 22px;}
+
+  .profile-image{margin: 0 auto 25px auto;}
+  .small-banner h1{
+    top: 35px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -480,4 +485,33 @@ footer{text-align: center;}
   }
   .blog-pic{width: 80%; float: none;}
   .blog-pic img{width: 100%;}
+
+  .profile-image,.profile-image img{
+    width: 100%;
+  }
+  .small-banner h1{
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .small-banner h1 {
+    font-size: 20px;
+  }
+
+  .main h2 {
+    font-size: 17px;
+  }
+
+  .practice-area h2, .bodypart h2 {
+    font-size: 18px;
+  }
+
+  .practice-txt {
+    font-size: 10px;
+  }
+
+  .call-no{
+    font-size: 20px;
+  }
 }

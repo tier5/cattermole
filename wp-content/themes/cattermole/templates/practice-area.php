@@ -70,7 +70,7 @@ $practice_query = new WP_Query($practice_args);
 
               </div>
 
-              <div class="col-md-4 col-sm-4">
+              <div class="col-md-4">
                   <div class="contact-box">
                       <h3 class="align-center">Contact Us</h3>
                        <p class="align-center">About the firm text goes here</p>
