@@ -152,6 +152,7 @@ footer h5{
 }
 footer p{margin: 0; padding:0; color: #fff;}
 
+
 footer ul{padding-top: 30px; text-align: right;}
 footer ul li{
   display: inline-block;
@@ -338,31 +339,9 @@ div.wpcf7-response-output{margin: 0 !important;}
 
 @media screen and (max-width: 600px) {
 
-.phone-no{display: none;}
-.header-bottom{display: none;}
+/*.phone-no{display: none;}
+.header-bottom{display: none;}*/
 /*.banner .caption{margin: 11% auto;}*/
-
-.banner .caption{margin: 5% auto; top: 0; left: 0; bottom: 0; right: 0;}
-
-.our-contact{text-align: center;}
-footer{text-align: center;}
-.copyrights{padding-top: 25px;}
-.sample-pic{width: 260px; margin: 0 auto 15px;}
-.mobile-menu{display: block; background: #15212B; text-align: center;}
-.banner{max-height:238px;}
-.our_people{width: auto; margin: 0 auto; text-align: center;}
-.small-banner{margin: 0;}
-
-.small-banner h1{top: 25px; font-size: 27px;}
-.small-banner{ margin-top: 0px;}
-.small-banner img{height: 86px;}
-.main{padding-top: 5px;}
-.main h2{text-align: center;}
-.inner-practice{margin-top: 4px; margin-bottom: 15px;}
-
-.contact-bg{min-height: 759px; padding-top: 0;}
-
-
 }
 
 
@@ -385,9 +364,9 @@ footer{text-align: center;}
 
 @media screen and (max-width: 390px) {
 
-	.banner .caption .caption-top {font-size: 15px;}
+	/*.banner .caption .caption-top {font-size: 15px;}
 	.banner .caption .caption-bottom {font-size: 15px;}
-	.banner .caption {width: 290px;}
+	.banner .caption {width: 290px;}*/
 
   .profile-image{width: 300px;}
 
@@ -420,6 +399,15 @@ footer{text-align: center;}
   .copyrights {
       text-align: left;
       margin-top: 20px;
+  }
+
+  footer .phoneno-panel p {
+    display: inline-block;
+    width: 50%;
+  }
+
+  footer .phoneno-panel p span{
+    float: right;
   }
 
 }
@@ -492,6 +480,29 @@ footer{text-align: center;}
   .small-banner h1{
     top: 20px;
   }
+
+  .banner .caption{margin: 5% auto; top: 0; left: 0; bottom: 0; right: 0;}
+
+  .our-contact{text-align: center;}
+  footer{text-align: center;}
+  .copyrights{padding-top: 25px;}
+  .sample-pic{width: 260px; margin: 0 auto 15px;}
+  .mobile-menu{display: block; background: #15212B; text-align: center;}
+  .banner{max-height:238px;}
+  .our_people{width: auto; margin: 0 auto; text-align: center;}
+  .small-banner{margin: 0;}
+
+  .small-banner h1{top: 25px; font-size: 27px;}
+  .small-banner{ margin-top: 0px;}
+  .small-banner img{height: 86px;}
+  .main{padding-top: 5px;}
+  .main h2{text-align: center;}
+  .inner-practice{margin-top: 4px; margin-bottom: 15px;}
+
+  .contact-bg{min-height: 759px; padding-top: 0;}
+  .logo{
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -501,14 +512,6 @@ footer{text-align: center;}
 
   .main h2 {
     font-size: 17px;
-  }
-
-  .practice-area h2, .bodypart h2 {
-    font-size: 18px;
-  }
-
-  .practice-txt {
-    font-size: 10px;
   }
 
   .call-no{

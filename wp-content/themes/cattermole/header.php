@@ -47,7 +47,7 @@
                         </a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-3 col-sm-3 hidden-xs">
                         <div class="phone-no">
                           <a href="tel:3102779945"><?php dynamic_sidebar('sidebar-5');?></a>
                         </div>
@@ -55,7 +55,7 @@
                 </div>
             </div>  
         </div>
-        <div class="header-bottom">
+        <div class="header-bottom hidden-xs">
             <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
         </div>
         <div class="mobile-menu">
