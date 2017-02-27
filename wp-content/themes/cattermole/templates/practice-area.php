@@ -65,9 +65,9 @@ $practice_query = new WP_Query($practice_args);
         <div class="container">
           <div class="row">
               <div class="col-md-8">
-                 <?php echo $content;?>
-
-
+                <div class="practice-area-text">
+                  <?php echo $content;?>
+                </div>
               </div>
 
               <div class="col-md-4">

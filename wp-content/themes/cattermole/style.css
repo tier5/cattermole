@@ -134,6 +134,7 @@ font-size: 40px; padding: 5px 0;}
 .practice-txt{color: #fff; font-size: 18px; padding: 20px 0;}
 .practice-txt a{color: #fff;}
 .practice-txt a:hover{color: #fff; text-decoration: none;}
+.practice-area-text{ margin-bottom: 50px; }
 .bodypart{padding:25px 0;}
 .bodypart h2{padding-bottom: 20px;}
 .bodypart p{font-size: 17px;}
@@ -466,10 +467,11 @@ div.wpcf7-response-output{margin: 0 !important;}
   .phoneno-panel p{
     font-size: 12px;
   }
-  h2.blog-heading {
+  .main h2.blog-heading {
     font-size: 30px;
     padding: 10px;
     font-weight: normal;
+    text-align: left;
   }
   .blog-pic{width: 80%; float: none;}
   .blog-pic img{width: 100%;}
