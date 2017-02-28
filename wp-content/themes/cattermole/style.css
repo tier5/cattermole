@@ -103,7 +103,7 @@ a{outline: none;}
 
 
 header .header-top{background:#262626; padding: 15px 0;  color: #fff;}
-header .header-top .phone-no{font-size: 27px; text-align: right; font-family: 'Lato', sans-serif;}
+header .header-top .phone-no{font-size: 25px; text-align: right; font-family: 'Lato', sans-serif;}
 header .header-top .phone-no a{color: #fff;}
 
 header .header-bottom{background:#fff; padding: 14px 0;
@@ -430,7 +430,7 @@ div.wpcf7-response-output{margin: 0 !important;}
     font-size: 20px;
   }
 
-  header .header-top .phone-no{font-size: 22px;}
+  header .header-top .phone-no{font-size: 18px;}
 
   .profile-image{margin: 0 auto 25px auto;}
   .small-banner h1{
