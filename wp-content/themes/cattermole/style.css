@@ -103,7 +103,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 
-body{font-family: 'Georgia'; letter-spacing: all;background-color: #f4f3ee;}
+body{font-family: 'Georgia'; letter-spacing: all;}
 img{max-width: 100%;}
 .align-center{text-align: center;}
 h2{font-size: 30px; margin: 0; padding: 0; color: #081F32;}
@@ -145,7 +145,7 @@ header .header-bottom ul li .sub-menu li a{
   font-size: 15px;
   display: block;
   margin: 0 0 10px;
-  padding: 0 5px;
+  padding: 10px 5px 0;
 }
 
 header .header-bottom ul li:hover .sub-menu{
@@ -176,7 +176,7 @@ font-size: 40px; padding: 5px 0;}
 .our-contact p{margin: 0; padding: 0;}
 .bodypart .container{width: 800px;}
 .map iframe{width: 100%; height: 499px;}
-.call-no{text-align: center; font-size: 24px; color: #262626; padding:5px 0 8px;}
+.call-no{text-align: center; font-size: 24px; color: #262626; padding:5px 0 8px;background: #f4f3ee;}
 
 footer{background:#041e33; padding:22px 0;}
 footer h5{
