@@ -136,7 +136,7 @@ header .header-bottom ul li .sub-menu{
   left: 5px;
   right: 0;
   text-align: left;
-  width: 100%;
+  width: 200px;
   top: 25px;
   display: none;
   z-index: 9999;
@@ -318,7 +318,7 @@ font-family: 'Lato', sans-serif; font-size: 13px;}
 .contact-bg{background: url(images/contact-bg.jpg) no-repeat; background-size:cover;
 min-height: 780px; padding-top: 53px; position: relative; overflow: hidden; color: #fff;}
 .contact-overlay{background:rgba(0, 0, 0, 0.4); position: absolute; width: 100%; height: 100%; top: 0}
-.contact-main{z-index: 9999; position: absolute; width: 100%;}
+.contact-main{z-index: 999; position: absolute; width: 100%;}
 
 
 

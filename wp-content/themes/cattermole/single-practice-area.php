@@ -22,8 +22,8 @@ $practice_query = new WP_Query($practice_args);
 <?php while(have_posts()):the_post();?>
   <?php $area_image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full');?>
   <div class="small-banner">
-      <img src="<?php echo get_template_directory_uri();?>/images/firm-overview-banner.jpg" alt="img">
-      <h1><span><img src="<?php echo $area_image[0]!='' ? $area_image[0] : '' ;?>" alt="img"></span><?php echo get_the_title();?></h1>
+      <img src="<?php echo get_template_directory_uri();?>/images/firm-overview-banner.jpg" alt="img" class="img-responsive">
+      <h1><span><img src="<?php echo $area_image[0]!='' ? $area_image[0] : '' ;?>" alt="img" class="img-responsive"></span><?php echo get_the_title();?></h1>
     </div>
 
     <div class="main">
@@ -33,7 +33,7 @@ $practice_query = new WP_Query($practice_args);
                   <?php echo get_the_content();?>
                   
                   </div>
-              <div class="col-md-4 col-sm-4">
+              <div class="col-md-4">
                   <div class="contact-box">
                       <h3 class="align-center">Contact Us</h3>
                        <p class="align-center">About the firm text goes here</p>
