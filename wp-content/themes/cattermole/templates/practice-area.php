@@ -38,23 +38,20 @@ $practice_query = new WP_Query($practice_args);
       <h1><?php echo $title;?></h1>
     </div>
     <div class="container-fluid">
-
-        <div class="row">
-            <div class="col-md-12 col-sm-12">
+      <div class="row">
+          <div class="col-md-12 col-sm-12">
             <div class="row">
               <div class="practice-area inner-practice">
-                   <?php if($practice_query->have_posts()):?>
-                <?php while($practice_query->have_posts()):$practice_query->the_post();?>
+                  <?php if($practice_query->have_posts()):?>
+                  <?php while($practice_query->have_posts()):$practice_query->the_post();?>
                   <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'full');?>
-                 <div class="col-md-2 col-sm-4 col-xs-6">
+                <div class="col-md-2 col-sm-4 col-xs-6">
                   <a href="<?php echo get_permalink();?>"><img src="<?php echo ($image[0]!="")?$image[0]:'';?>" alt="img"></a>
                   <div class="practice-txt">
-                   <a href="<?php echo get_permalink();?>"> <?php echo get_the_title();?></a>
-                  </div>
+                  <a href="<?php echo get_permalink();?>"><?php echo get_the_title();?></a>
                 </div>
-
-
-              <?php endwhile;?>
+              </div>
+            <?php endwhile;?>
             <?php endif;?>  
               </div> 
               </div> 

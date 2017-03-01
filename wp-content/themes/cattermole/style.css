@@ -91,10 +91,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }*/
 
 
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
 
 
-
-body{font-family: 'Georgia'; letter-spacing: all;}
+body{font-family: 'Georgia'; letter-spacing: all;background-color: #f4f3ee;}
 img{max-width: 100%;}
 .align-center{text-align: center;}
 h2{font-size: 30px; margin: 0; padding: 0; color: #081F32;}
@@ -112,11 +121,36 @@ header .header-bottom{background:#fff; padding: 14px 0;
 box-shadow: 0 8px 6px -6px black;
 width: 100%; position: absolute; z-index: 9999;}
 header .header-bottom ul{text-align:  center; margin: 0; padding: 0}
-header .header-bottom ul li{margin: 0; padding: 0; display: inline-block; font-family: 'Georgia'; font-size: 17px;}
+header .header-bottom ul li{margin: 0; padding: 0; display: inline-block; font-family: 'Georgia'; font-size: 17px; position: relative;}
 header .header-bottom ul li a{margin: 0; padding: 0 10px; text-decoration: none; color: #4D4C4C;}
 .banner{text-align: center; position: relative; max-height: 595px; overflow: hidden;}
 /*.banner .caption{width: 572px; margin: 15% auto; position: absolute; top: 0; left: 0; right: 0;
  }*/
+header .header-bottom ul li a:hover{
+  opacity: 0.8;
+}
+
+header .header-bottom ul li .sub-menu{
+  position: absolute;
+  background: #fff;
+  left: 5px;
+  right: 0;
+  text-align: left;
+  width: 100%;
+  top: 25px;
+  display: none;
+  z-index: 9999;
+}
+header .header-bottom ul li .sub-menu li a{
+  font-size: 15px;
+  display: block;
+  margin: 0 0 10px;
+  padding: 0 5px;
+}
+
+header .header-bottom ul li:hover .sub-menu{
+  display: block;
+}
 
 .banner .caption{width: 572px; position: absolute; 
   top: 50%; left: 50%; right: 0; margin-left: -286px; margin-top: -113px;
@@ -192,18 +226,43 @@ width: 49px; margin: 0 auto;
 .mobile-menu ul li:last-child{border-bottom: none;}
 
 .mobile-menu ul li a{text-align: left; color: #fff; text-decoration: none;display: block;}
+
+.mobile-menu ul li .sub-menu {
+  background: #fff;
+  margin-top: 10px;
+}
+
+.mobile-menu ul li .sub-menu li a{
+  color: #333;
+  display: block;
+  padding: 0 10px;
+}
+
 .small-banner {
-  height: 142px;
+  height: 100%;
   margin-top: 51px;
   position: relative;
   text-align: center;
   overflow: hidden;
 }
-.small-banner img{width: 100%;} 
+.small-banner img{width: 100%; height: 100%;} 
 
-.small-banner h1{margin: 0; padding: 0; font-family: 'Lato', sans-serif; font-size: 35px;
-color: #fff; position: absolute; top: 50px; left: 0; right: 0; bottom: 0; 
-z-index: 9999;}
+.small-banner h1{
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Lato', sans-serif; 
+  font-size: 35px;
+  color: #fff; 
+  position: absolute; 
+  /*top: 50px; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; */
+  z-index: 999;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 52%;
+}
 .main{padding-top: 56px; padding-bottom: 15px;}
 .main h2{font-size: 26px; color: #15212B; padding-bottom: 15px; font-family: 'Lato', sans-serif; font-weight: 700;}
 .main p{font-size: 13px; color: #3E434B;}
@@ -290,7 +349,8 @@ border:none; padding: 13px; font-family: 'Lato', sans-serif; font-size: 15px;
 .small-banner h1 span {
   display: inline-block;
   margin: 0 5px 0 0;
-  width: 55px;
+  width: 15%;
+  vertical-align: middle;
 }
 .small-banner h1 span img{max-width: 100%; height: auto;}
 .single-testimonial{font-family: 'Lato', sans-serif; padding-bottom: 20px;}
@@ -312,39 +372,17 @@ div.wpcf7-response-output{margin: 0 !important;}
 
 
 @media screen and (max-width: 850px) {
-
 .bodypart .container{width: auto;}
 .banner{max-height:485px;}
-.small-banner h1{top: 25px;}
-
 .location-info{text-align: center;}
-.small-banner h1{top: 17px;}
-
-
+/*.small-banner h1{top: 17px;}*/
 }
-
-
 @media screen and (max-width: 790px) {
-
-  /*.banner .caption{margin:20% auto;}*/
-
   .banner .caption{margin:20% auto; left: 0; right: 0; bottom: 0; top: 0;}
-
-
 	.banner .caption .caption-top{font-size: 27px; }
 	.banner .caption .caption-bottom{font-size: 27px;}
 	.banner .caption{width: 419px;}
-
 }
-
-
-@media screen and (max-width: 600px) {
-
-/*.phone-no{display: none;}
-.header-bottom{display: none;}*/
-/*.banner .caption{margin: 11% auto;}*/
-}
-
 
 @media screen and (max-width: 480px) {
 
@@ -359,18 +397,10 @@ div.wpcf7-response-output{margin: 0 !important;}
 	.address-panel{padding-bottom: 15px;}
 	.phoneno-panel{padding-bottom: 15px;}
 	.map iframe{height: 300px;}
-
-
 }
 
 @media screen and (max-width: 390px) {
-
-	/*.banner .caption .caption-top {font-size: 15px;}
-	.banner .caption .caption-bottom {font-size: 15px;}
-	.banner .caption {width: 290px;}*/
-
   .profile-image{width: 300px;}
-
 }
 .ssba, .ssba a{
   display: inline-block;
@@ -379,10 +409,6 @@ div.wpcf7-response-output{margin: 0 !important;}
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   footer ul li a {
     font-size: 15px;
-  }
-
-   footer .phoneno-panel p span{
-    float: right;
   }
 }
 
@@ -409,20 +435,21 @@ div.wpcf7-response-output{margin: 0 !important;}
   footer .phoneno-panel p {
     display: inline-block;
     width: 50%;
+    text-align: right;
+    margin-bottom: 10px;
   }
 
-  footer .phoneno-panel p span{
-    float: right;
+  .small-banner h1{
+    width: 100%;
+  }
+
+  .small-banner h1 span {
+    width: 60px;
   }
 
 }
 
 @media screen and (max-width: 991px) {
-  
-  .small-banner{
-    height: auto;
-  }
-
   .main {
      padding-top: 20px; 
   }
@@ -437,12 +464,23 @@ div.wpcf7-response-output{margin: 0 !important;}
   header .header-top .phone-no{font-size: 18px;}
 
   .profile-image{margin: 0 auto 25px auto;}
-  .small-banner h1{
-    top: 35px;
-  }
 }
 
 @media screen and (max-width: 767px) {
+
+  .small-banner{
+    margin-top: 0;
+    height: 150px;
+  }
+
+  .small-banner h1 {
+    width: 100%;
+  }
+
+  .small-banner h1 span {
+    width: 10%;
+  }
+
   footer ul {
     text-align: center;
     width: 50%;
@@ -484,9 +522,6 @@ div.wpcf7-response-output{margin: 0 !important;}
   .profile-image,.profile-image img{
     width: 100%;
   }
-  .small-banner h1{
-    top: 20px;
-  }
 
   .banner .caption{margin: 5% auto; top: 0; left: 0; bottom: 0; right: 0;}
 
@@ -494,18 +529,86 @@ div.wpcf7-response-output{margin: 0 !important;}
   footer{text-align: center;}
   .copyrights{padding-top: 25px;}
   .sample-pic{width: 260px; margin: 0 auto 15px;}
+
   .mobile-menu{display: block; background: #15212B; text-align: center;}
+  .menubar{display: inline-block;}
+
+.mobile-menu .menu-icon {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  background-color: transparent;
+  width: 30px;
+  height: 18px;
+  z-index: 1000;
+  transition: -webkit-transform 550ms cubic-bezier(.23,1,.32,1);
+  transition: transform 550ms cubic-bezier(.23,1,.32,1);
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.mobile-menu .menu-icon .bar {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #000;
+  transition: all 550ms cubic-bezier(.23,1,.32,1);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.mobile-menu .menu-icon .bar.top {
+  top: 0;
+  margin-top: -1px;
+}
+
+.mobile-menu .menu-icon .bar.middle {
+  top: 50%;
+  margin-top: -1px;
+}
+
+.mobile-menu .menu-icon .bar.bottom {
+  bottom: 0;
+  margin-bottom: -5px;
+}
+
+.mobile-menu .menu-icon.close {
+  /*-webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);*/
+  opacity: 1;
+}
+
+.mobile-menu .menu-icon.close .bar.top {
+  top: 50%;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.mobile-menu .menu-icon.close .bar.middle {
+  opacity: 0;
+}
+
+.mobile-menu .menu-icon.close .bar.bottom {
+  bottom: 50%;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.menu-txt{
+  bottom: 10px;
+  position: absolute;
+  left: 48%;
+  text-align: left;
+  top: 45px;
+}
+
   .banner{max-height:238px;}
   .our_people{width: auto; margin: 0 auto; text-align: center;}
-  .small-banner{margin: 0;}
-
-  .small-banner h1{top: 25px; font-size: 27px;}
-  .small-banner{ margin-top: 0px;}
-  .small-banner img{height: 86px;}
   .main{padding-top: 5px;}
   .main h2{text-align: center;}
   .inner-practice{margin-top: 4px; margin-bottom: 15px;}
-
   .contact-bg{min-height: 759px; padding-top: 0;}
   .logo{
     text-align: center;
@@ -513,15 +616,13 @@ div.wpcf7-response-output{margin: 0 !important;}
 }
 
 @media screen and (max-width: 480px) {
-  .small-banner h1 {
-    font-size: 20px;
-  }
-
-  .main h2 {
-    font-size: 17px;
-  }
-
   .call-no{
     font-size: 20px;
+  }
+  .small-banner{
+    height: 100px;
+  }
+  .small-banner h1{
+    font-size: 28px;
   }
 }
